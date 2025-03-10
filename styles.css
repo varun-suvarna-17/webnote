@@ -22,18 +22,34 @@ nav a {
 
 /* Hero Section */
 .hero {
-    background: url('"C:\Users\varun\OneDrive\Pictures\noss.jpg"') no-repeat center center;
-    background-size: cover;
+    position: relative;
+    width: 100%;
     height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
+}
+
+/* Add the hero image */
+.hero::before {
+    content: "";
+    background: url('your-image.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8; /* Adjust transparency */
 }
 
 .hero-content {
     max-width: 600px;
+    position: relative; /* Ensures it stays above the image */
+    color: white;
 }
 
 .hero h1 {
