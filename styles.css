@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a000a;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(to right, #5a007a, #38004d);
+    padding: 15px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('"C:\Users\varun\OneDrive\Pictures\noss.jpg"') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #a832a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn.secondary {
+    background: none;
+    border: 2px solid white;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-item {
+    width: 250px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Workspace */
+.workspace {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.new-folder-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
